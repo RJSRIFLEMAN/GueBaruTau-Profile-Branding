@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="feature"></div>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="logo.jpeg" alt="logo">
+    <span>guebarutau</span>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+<section class="contact-section">
+
+  <h1>Contact Us</h1>
+
+  <div class="contact-wrapper">
+
+    <!-- TALK TO US -->
+    <div class="contact-card">
+      <div class="icon">👨‍💻</div>
+      <h3>Talk to us</h3>
+      <p>Kami siap membantu kebutuhan website kamu dari awal sampai selesai.</p>
+      <button onclick="openConfirm('https://wa.link/a9iopp')">
+        Contact Team
+      </button>
+    </div>
+
+    <!-- SUPPORT -->
+    <div class="contact-card">
+      <div class="icon">⚙️</div>
+      <h3>Support</h3>
+      <p>Butuh bantuan atau ada kendala? Tim kami siap bantu kapan saja.</p>
+      <button onclick="openConfirm('https://wa.link/gn4tt4')">
+        Get Help
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- POPUP (FIXED 1x AJA) -->
+<div id="confirmPopup">
+  <div class="confirm-box">
+    <p>Klik untuk lanjut ke WhatsApp</p>
+    <a id="confirmLink" target="_blank">Buka Link</a>
+    <button onclick="closeConfirm()">Batal</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
